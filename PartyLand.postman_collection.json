@@ -1,0 +1,2485 @@
+{
+	"info": {
+		"_postman_id": "8083b2f3-d6e0-42cf-8cd2-460ddccb80d6",
+		"name": "PartyLand",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "host",
+			"item": [
+				{
+					"name": "add party",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "90cd723f-1afc-4138-aa5b-d7b92dc5f8e4",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE3NDE2MDk5NDI2ODc5NjQ2MTQzIiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NDk5MCwiZXhwIjoxNTg0ODU2OTg1LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJhZGQ6aW52aXRlZXMiLCJjcmVhdGU6cGFydHkiLCJkZWxldGU6aW52aXRlZXMiLCJkZWxldGU6cGFydHkiLCJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiLCJ1cGRhdGU6aW52aXRlZXMiLCJ1cGRhdGU6cGFydHkiXX0.qFCwyW2FRxPBj7mKTCCdZ4okksxxlUxZam02vQssmCHXui6aBxLolNc4EP-ONPEEjCgy8H28bctRpAL6ymidM9eyHNeE3MZFay0P16JLeZzTTD9rlYWkpna1IRtycHhrI6QqFdAocF1SwCQEogUHPLazPZX8TbojXFlGcyE004dqGm6KcM6Ge9ms8UvEo3inmUnG8EO8W06ua0grKb0zoHWHj979KMbMGQ_TXXMi_A9IJ37Pkqr2QLv8hfmkMHMV2xe1WVPGb_62wtleYoKLrkZCMjl8whHlH3mUWeHMmTYJEjA6MZrhNulMXKfHlnRcfQsWUJBAhUdnieBlKIlqig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Jazz time",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "lets have a smoth night",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2020-04-01 19:00:00",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "los angeles ",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "california",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add invitees",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f0edafb6-4f2f-46d7-9607-5d0953b1eeeb",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE3NDE2MDk5NDI2ODc5NjQ2MTQzIiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NDk5MCwiZXhwIjoxNTg0ODU2OTg1LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJhZGQ6aW52aXRlZXMiLCJjcmVhdGU6cGFydHkiLCJkZWxldGU6aW52aXRlZXMiLCJkZWxldGU6cGFydHkiLCJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiLCJ1cGRhdGU6aW52aXRlZXMiLCJ1cGRhdGU6cGFydHkiXX0.qFCwyW2FRxPBj7mKTCCdZ4okksxxlUxZam02vQssmCHXui6aBxLolNc4EP-ONPEEjCgy8H28bctRpAL6ymidM9eyHNeE3MZFay0P16JLeZzTTD9rlYWkpna1IRtycHhrI6QqFdAocF1SwCQEogUHPLazPZX8TbojXFlGcyE004dqGm6KcM6Ge9ms8UvEo3inmUnG8EO8W06ua0grKb0zoHWHj979KMbMGQ_TXXMi_A9IJ37Pkqr2QLv8hfmkMHMV2xe1WVPGb_62wtleYoKLrkZCMjl8whHlH3mUWeHMmTYJEjA6MZrhNulMXKfHlnRcfQsWUJBAhUdnieBlKIlqig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "souhaib",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "souhaib@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "123-123-1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/invitees/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"invitees",
+								"add"
+							]
+						},
+						"description": "\t\t\t"
+					},
+					"response": []
+				},
+				{
+					"name": "get parties",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ac912e9c-f537-4a08-bb56-696b54beaaff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE3NDE2MDk5NDI2ODc5NjQ2MTQzIiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NDk5MCwiZXhwIjoxNTg0ODU2OTg1LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJhZGQ6aW52aXRlZXMiLCJjcmVhdGU6cGFydHkiLCJkZWxldGU6aW52aXRlZXMiLCJkZWxldGU6cGFydHkiLCJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiLCJ1cGRhdGU6aW52aXRlZXMiLCJ1cGRhdGU6cGFydHkiXX0.qFCwyW2FRxPBj7mKTCCdZ4okksxxlUxZam02vQssmCHXui6aBxLolNc4EP-ONPEEjCgy8H28bctRpAL6ymidM9eyHNeE3MZFay0P16JLeZzTTD9rlYWkpna1IRtycHhrI6QqFdAocF1SwCQEogUHPLazPZX8TbojXFlGcyE004dqGm6KcM6Ge9ms8UvEo3inmUnG8EO8W06ua0grKb0zoHWHj979KMbMGQ_TXXMi_A9IJ37Pkqr2QLv8hfmkMHMV2xe1WVPGb_62wtleYoKLrkZCMjl8whHlH3mUWeHMmTYJEjA6MZrhNulMXKfHlnRcfQsWUJBAhUdnieBlKIlqig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/?page_num=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								""
+							],
+							"query": [
+								{
+									"key": "page_num",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get invitees",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ac912e9c-f537-4a08-bb56-696b54beaaff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE3NDE2MDk5NDI2ODc5NjQ2MTQzIiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NDk5MCwiZXhwIjoxNTg0ODU2OTg1LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJhZGQ6aW52aXRlZXMiLCJjcmVhdGU6cGFydHkiLCJkZWxldGU6aW52aXRlZXMiLCJkZWxldGU6cGFydHkiLCJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiLCJ1cGRhdGU6aW52aXRlZXMiLCJ1cGRhdGU6cGFydHkiXX0.qFCwyW2FRxPBj7mKTCCdZ4okksxxlUxZam02vQssmCHXui6aBxLolNc4EP-ONPEEjCgy8H28bctRpAL6ymidM9eyHNeE3MZFay0P16JLeZzTTD9rlYWkpna1IRtycHhrI6QqFdAocF1SwCQEogUHPLazPZX8TbojXFlGcyE004dqGm6KcM6Ge9ms8UvEo3inmUnG8EO8W06ua0grKb0zoHWHj979KMbMGQ_TXXMi_A9IJ37Pkqr2QLv8hfmkMHMV2xe1WVPGb_62wtleYoKLrkZCMjl8whHlH3mUWeHMmTYJEjA6MZrhNulMXKfHlnRcfQsWUJBAhUdnieBlKIlqig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/invitees",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"invitees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read party details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "dfa63b58-fb99-44b3-b6de-72676a5562b2",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE3NDE2MDk5NDI2ODc5NjQ2MTQzIiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NDk5MCwiZXhwIjoxNTg0ODU2OTg1LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJhZGQ6aW52aXRlZXMiLCJjcmVhdGU6cGFydHkiLCJkZWxldGU6aW52aXRlZXMiLCJkZWxldGU6cGFydHkiLCJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiLCJ1cGRhdGU6aW52aXRlZXMiLCJ1cGRhdGU6cGFydHkiXX0.qFCwyW2FRxPBj7mKTCCdZ4okksxxlUxZam02vQssmCHXui6aBxLolNc4EP-ONPEEjCgy8H28bctRpAL6ymidM9eyHNeE3MZFay0P16JLeZzTTD9rlYWkpna1IRtycHhrI6QqFdAocF1SwCQEogUHPLazPZX8TbojXFlGcyE004dqGm6KcM6Ge9ms8UvEo3inmUnG8EO8W06ua0grKb0zoHWHj979KMbMGQ_TXXMi_A9IJ37Pkqr2QLv8hfmkMHMV2xe1WVPGb_62wtleYoKLrkZCMjl8whHlH3mUWeHMmTYJEjA6MZrhNulMXKfHlnRcfQsWUJBAhUdnieBlKIlqig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Jazz time",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/display",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"display"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add invitees to party",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "90cd723f-1afc-4138-aa5b-d7b92dc5f8e4",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE3NDE2MDk5NDI2ODc5NjQ2MTQzIiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NDk5MCwiZXhwIjoxNTg0ODU2OTg1LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJhZGQ6aW52aXRlZXMiLCJjcmVhdGU6cGFydHkiLCJkZWxldGU6aW52aXRlZXMiLCJkZWxldGU6cGFydHkiLCJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiLCJ1cGRhdGU6aW52aXRlZXMiLCJ1cGRhdGU6cGFydHkiXX0.qFCwyW2FRxPBj7mKTCCdZ4okksxxlUxZam02vQssmCHXui6aBxLolNc4EP-ONPEEjCgy8H28bctRpAL6ymidM9eyHNeE3MZFay0P16JLeZzTTD9rlYWkpna1IRtycHhrI6QqFdAocF1SwCQEogUHPLazPZX8TbojXFlGcyE004dqGm6KcM6Ge9ms8UvEo3inmUnG8EO8W06ua0grKb0zoHWHj979KMbMGQ_TXXMi_A9IJ37Pkqr2QLv8hfmkMHMV2xe1WVPGb_62wtleYoKLrkZCMjl8whHlH3mUWeHMmTYJEjA6MZrhNulMXKfHlnRcfQsWUJBAhUdnieBlKIlqig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "party_name",
+									"value": "Jazz time",
+									"type": "text"
+								},
+								{
+									"key": "invitee_email",
+									"value": "souhaib@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/invitees/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"invitees",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read invitees details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "dfa63b58-fb99-44b3-b6de-72676a5562b2",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE3NDE2MDk5NDI2ODc5NjQ2MTQzIiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NDk5MCwiZXhwIjoxNTg0ODU2OTg1LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJhZGQ6aW52aXRlZXMiLCJjcmVhdGU6cGFydHkiLCJkZWxldGU6aW52aXRlZXMiLCJkZWxldGU6cGFydHkiLCJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiLCJ1cGRhdGU6aW52aXRlZXMiLCJ1cGRhdGU6cGFydHkiXX0.qFCwyW2FRxPBj7mKTCCdZ4okksxxlUxZam02vQssmCHXui6aBxLolNc4EP-ONPEEjCgy8H28bctRpAL6ymidM9eyHNeE3MZFay0P16JLeZzTTD9rlYWkpna1IRtycHhrI6QqFdAocF1SwCQEogUHPLazPZX8TbojXFlGcyE004dqGm6KcM6Ge9ms8UvEo3inmUnG8EO8W06ua0grKb0zoHWHj979KMbMGQ_TXXMi_A9IJ37Pkqr2QLv8hfmkMHMV2xe1WVPGb_62wtleYoKLrkZCMjl8whHlH3mUWeHMmTYJEjA6MZrhNulMXKfHlnRcfQsWUJBAhUdnieBlKIlqig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "souhaib",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/invitees/display",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"invitees",
+								"display"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get list of invitees in a party",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ac912e9c-f537-4a08-bb56-696b54beaaff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE3NDE2MDk5NDI2ODc5NjQ2MTQzIiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NDk5MCwiZXhwIjoxNTg0ODU2OTg1LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJhZGQ6aW52aXRlZXMiLCJjcmVhdGU6cGFydHkiLCJkZWxldGU6aW52aXRlZXMiLCJkZWxldGU6cGFydHkiLCJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiLCJ1cGRhdGU6aW52aXRlZXMiLCJ1cGRhdGU6cGFydHkiXX0.qFCwyW2FRxPBj7mKTCCdZ4okksxxlUxZam02vQssmCHXui6aBxLolNc4EP-ONPEEjCgy8H28bctRpAL6ymidM9eyHNeE3MZFay0P16JLeZzTTD9rlYWkpna1IRtycHhrI6QqFdAocF1SwCQEogUHPLazPZX8TbojXFlGcyE004dqGm6KcM6Ge9ms8UvEo3inmUnG8EO8W06ua0grKb0zoHWHj979KMbMGQ_TXXMi_A9IJ37Pkqr2QLv8hfmkMHMV2xe1WVPGb_62wtleYoKLrkZCMjl8whHlH3mUWeHMmTYJEjA6MZrhNulMXKfHlnRcfQsWUJBAhUdnieBlKIlqig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "party_name",
+									"value": "Jazz time",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/invitees",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"invitees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update party",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a7520a91-190b-47f4-af19-9cc0465ed8f9",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE3NDE2MDk5NDI2ODc5NjQ2MTQzIiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NDk5MCwiZXhwIjoxNTg0ODU2OTg1LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJhZGQ6aW52aXRlZXMiLCJjcmVhdGU6cGFydHkiLCJkZWxldGU6aW52aXRlZXMiLCJkZWxldGU6cGFydHkiLCJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiLCJ1cGRhdGU6aW52aXRlZXMiLCJ1cGRhdGU6cGFydHkiXX0.qFCwyW2FRxPBj7mKTCCdZ4okksxxlUxZam02vQssmCHXui6aBxLolNc4EP-ONPEEjCgy8H28bctRpAL6ymidM9eyHNeE3MZFay0P16JLeZzTTD9rlYWkpna1IRtycHhrI6QqFdAocF1SwCQEogUHPLazPZX8TbojXFlGcyE004dqGm6KcM6Ge9ms8UvEo3inmUnG8EO8W06ua0grKb0zoHWHj979KMbMGQ_TXXMi_A9IJ37Pkqr2QLv8hfmkMHMV2xe1WVPGb_62wtleYoKLrkZCMjl8whHlH3mUWeHMmTYJEjA6MZrhNulMXKfHlnRcfQsWUJBAhUdnieBlKIlqig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Jazz time",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "lets have a smoth night",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2020-04-01 19:00:00",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "los angeles ",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "california",
+									"type": "text"
+								},
+								{
+									"key": "name_change",
+									"value": "Jazz time",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/update",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete invitees from party list",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5752867e-cb94-4647-a772-f4699cf065e6",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE3NDE2MDk5NDI2ODc5NjQ2MTQzIiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NDk5MCwiZXhwIjoxNTg0ODU2OTg1LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJhZGQ6aW52aXRlZXMiLCJjcmVhdGU6cGFydHkiLCJkZWxldGU6aW52aXRlZXMiLCJkZWxldGU6cGFydHkiLCJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiLCJ1cGRhdGU6aW52aXRlZXMiLCJ1cGRhdGU6cGFydHkiXX0.qFCwyW2FRxPBj7mKTCCdZ4okksxxlUxZam02vQssmCHXui6aBxLolNc4EP-ONPEEjCgy8H28bctRpAL6ymidM9eyHNeE3MZFay0P16JLeZzTTD9rlYWkpna1IRtycHhrI6QqFdAocF1SwCQEogUHPLazPZX8TbojXFlGcyE004dqGm6KcM6Ge9ms8UvEo3inmUnG8EO8W06ua0grKb0zoHWHj979KMbMGQ_TXXMi_A9IJ37Pkqr2QLv8hfmkMHMV2xe1WVPGb_62wtleYoKLrkZCMjl8whHlH3mUWeHMmTYJEjA6MZrhNulMXKfHlnRcfQsWUJBAhUdnieBlKIlqig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "party_name",
+									"value": "Jazz time",
+									"type": "text"
+								},
+								{
+									"key": "invitee_email",
+									"value": "souhaib@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/invitees/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"invitees",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete invitees",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5752867e-cb94-4647-a772-f4699cf065e6",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE3NDE2MDk5NDI2ODc5NjQ2MTQzIiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NDk5MCwiZXhwIjoxNTg0ODU2OTg1LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJhZGQ6aW52aXRlZXMiLCJjcmVhdGU6cGFydHkiLCJkZWxldGU6aW52aXRlZXMiLCJkZWxldGU6cGFydHkiLCJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiLCJ1cGRhdGU6aW52aXRlZXMiLCJ1cGRhdGU6cGFydHkiXX0.qFCwyW2FRxPBj7mKTCCdZ4okksxxlUxZam02vQssmCHXui6aBxLolNc4EP-ONPEEjCgy8H28bctRpAL6ymidM9eyHNeE3MZFay0P16JLeZzTTD9rlYWkpna1IRtycHhrI6QqFdAocF1SwCQEogUHPLazPZX8TbojXFlGcyE004dqGm6KcM6Ge9ms8UvEo3inmUnG8EO8W06ua0grKb0zoHWHj979KMbMGQ_TXXMi_A9IJ37Pkqr2QLv8hfmkMHMV2xe1WVPGb_62wtleYoKLrkZCMjl8whHlH3mUWeHMmTYJEjA6MZrhNulMXKfHlnRcfQsWUJBAhUdnieBlKIlqig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "souhaib",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/invitees/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"invitees",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete party",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5752867e-cb94-4647-a772-f4699cf065e6",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE3NDE2MDk5NDI2ODc5NjQ2MTQzIiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NDk5MCwiZXhwIjoxNTg0ODU2OTg1LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJhZGQ6aW52aXRlZXMiLCJjcmVhdGU6cGFydHkiLCJkZWxldGU6aW52aXRlZXMiLCJkZWxldGU6cGFydHkiLCJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiLCJ1cGRhdGU6aW52aXRlZXMiLCJ1cGRhdGU6cGFydHkiXX0.qFCwyW2FRxPBj7mKTCCdZ4okksxxlUxZam02vQssmCHXui6aBxLolNc4EP-ONPEEjCgy8H28bctRpAL6ymidM9eyHNeE3MZFay0P16JLeZzTTD9rlYWkpna1IRtycHhrI6QqFdAocF1SwCQEogUHPLazPZX8TbojXFlGcyE004dqGm6KcM6Ge9ms8UvEo3inmUnG8EO8W06ua0grKb0zoHWHj979KMbMGQ_TXXMi_A9IJ37Pkqr2QLv8hfmkMHMV2xe1WVPGb_62wtleYoKLrkZCMjl8whHlH3mUWeHMmTYJEjA6MZrhNulMXKfHlnRcfQsWUJBAhUdnieBlKIlqig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Jazz time",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add party for other tests",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "90cd723f-1afc-4138-aa5b-d7b92dc5f8e4",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE3NDE2MDk5NDI2ODc5NjQ2MTQzIiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NDk5MCwiZXhwIjoxNTg0ODU2OTg1LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJhZGQ6aW52aXRlZXMiLCJjcmVhdGU6cGFydHkiLCJkZWxldGU6aW52aXRlZXMiLCJkZWxldGU6cGFydHkiLCJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiLCJ1cGRhdGU6aW52aXRlZXMiLCJ1cGRhdGU6cGFydHkiXX0.qFCwyW2FRxPBj7mKTCCdZ4okksxxlUxZam02vQssmCHXui6aBxLolNc4EP-ONPEEjCgy8H28bctRpAL6ymidM9eyHNeE3MZFay0P16JLeZzTTD9rlYWkpna1IRtycHhrI6QqFdAocF1SwCQEogUHPLazPZX8TbojXFlGcyE004dqGm6KcM6Ge9ms8UvEo3inmUnG8EO8W06ua0grKb0zoHWHj979KMbMGQ_TXXMi_A9IJ37Pkqr2QLv8hfmkMHMV2xe1WVPGb_62wtleYoKLrkZCMjl8whHlH3mUWeHMmTYJEjA6MZrhNulMXKfHlnRcfQsWUJBAhUdnieBlKIlqig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Jazz time",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "lets have a smoth night",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2020-04-01 19:00:00",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "los angeles ",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "california",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add invitee for other tests",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f0edafb6-4f2f-46d7-9607-5d0953b1eeeb",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE3NDE2MDk5NDI2ODc5NjQ2MTQzIiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NDk5MCwiZXhwIjoxNTg0ODU2OTg1LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJhZGQ6aW52aXRlZXMiLCJjcmVhdGU6cGFydHkiLCJkZWxldGU6aW52aXRlZXMiLCJkZWxldGU6cGFydHkiLCJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiLCJ1cGRhdGU6aW52aXRlZXMiLCJ1cGRhdGU6cGFydHkiXX0.qFCwyW2FRxPBj7mKTCCdZ4okksxxlUxZam02vQssmCHXui6aBxLolNc4EP-ONPEEjCgy8H28bctRpAL6ymidM9eyHNeE3MZFay0P16JLeZzTTD9rlYWkpna1IRtycHhrI6QqFdAocF1SwCQEogUHPLazPZX8TbojXFlGcyE004dqGm6KcM6Ge9ms8UvEo3inmUnG8EO8W06ua0grKb0zoHWHj979KMbMGQ_TXXMi_A9IJ37Pkqr2QLv8hfmkMHMV2xe1WVPGb_62wtleYoKLrkZCMjl8whHlH3mUWeHMmTYJEjA6MZrhNulMXKfHlnRcfQsWUJBAhUdnieBlKIlqig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "souhaib",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "souhaib@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "123-123-1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/invitees/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"invitees",
+								"add"
+							]
+						},
+						"description": "\t\t\t"
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE3NDE2MDk5NDI2ODc5NjQ2MTQzIiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDczMTYwOSwiZXhwIjoxNTg0ODAzNjA0LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJjcmVhdGU6cGFydHkiLCJkZWxldGU6cGFydHkiLCJyZWFkOmRldGFpbHMiLCJ1cGRhdGU6cGFydHkiXX0.UAeJwsCDF6-T-bGD_Q0pTnH1twaVQtEadAV61rQ_xGOLytaWY0ZKxHkva5lmEtLTHFYL9rw8plQeSL5_u8LsQDRb8_09Sw0jOUiOFstTkfFWqeBG6KjGfKTCU4m7U9nZNdM_G4_I-bykzXeqB80SI4MklGbrd2HjeLiIzxRFlb7nTmlaOY1M30fpocIxAW5KFC5g1Q39RmDuFEWpqiRxeEBQwgrjDVvbT9MSK3sB5UulNUT4XRkLKAjnuliDe5TRmJodQ9Ub9qDh39cjO1_euWXtoGy8AbQzG4Na_8LFPMsaJoXQyjsfEOZhChcyadGcbXruiQDsoHXqfLGpzrnzyg",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "7431e90d-f27e-407d-9147-e772c4b546da",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "e32b58cd-6a72-4db8-a0ca-20a7857b240a",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "not invited",
+			"item": [
+				{
+					"name": "add party",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4eaeb6fb-e68a-4119-bb00-1fdd2ccd4674",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Jazz time",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "lets have a smoth night",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2020-04-01 19:00:00",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "los angeles ",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "california",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete party",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "20209ef0-0708-42b7-959e-76bfe7186ddc",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get parties",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "326940d0-f1bf-4b73-8d93-7b9b12275dac",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add invitees",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f0edafb6-4f2f-46d7-9607-5d0953b1eeeb",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "souhaib",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "souhaib@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "123-123-1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/invitees/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"invitees",
+								"add"
+							]
+						},
+						"description": "\t\t\t"
+					},
+					"response": []
+				},
+				{
+					"name": "update party",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "70d016f8-b437-4533-8523-27c40e1866fd",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Jazz time",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "lets have a smoth night",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2020-04-01 19:00:00",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "los angeles ",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "california",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/update",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read party details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "dfa63b58-fb99-44b3-b6de-72676a5562b2",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Jazz time",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/display",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"display"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete invitees",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5752867e-cb94-4647-a772-f4699cf065e6",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "souhaib",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/invitees/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"invitees",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get invitees",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ac912e9c-f537-4a08-bb56-696b54beaaff",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/invitees",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"invitees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get list of invitees in a party",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ac912e9c-f537-4a08-bb56-696b54beaaff",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "party_name",
+									"value": "Jazz time",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/invitees",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"invitees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add invitees to party",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "90cd723f-1afc-4138-aa5b-d7b92dc5f8e4",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "party_name",
+									"value": "Jazz time",
+									"type": "text"
+								},
+								{
+									"key": "invitee_email",
+									"value": "souhaib@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/invitees/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"invitees",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read invitees details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "dfa63b58-fb99-44b3-b6de-72676a5562b2",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "souhaib",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/invitees/display",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"invitees",
+								"display"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete invitees from party list",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5752867e-cb94-4647-a772-f4699cf065e6",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "party_name",
+									"value": "Jazz time",
+									"type": "text"
+								},
+								{
+									"key": "invitee_email",
+									"value": "souhaib@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/invitees/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"invitees",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE3NDE2MDk5NDI2ODc5NjQ2MTQzIiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDczMTYwOSwiZXhwIjoxNTg0ODAzNjA0LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJjcmVhdGU6cGFydHkiLCJkZWxldGU6cGFydHkiLCJyZWFkOmRldGFpbHMiLCJ1cGRhdGU6cGFydHkiXX0.UAeJwsCDF6-T-bGD_Q0pTnH1twaVQtEadAV61rQ_xGOLytaWY0ZKxHkva5lmEtLTHFYL9rw8plQeSL5_u8LsQDRb8_09Sw0jOUiOFstTkfFWqeBG6KjGfKTCU4m7U9nZNdM_G4_I-bykzXeqB80SI4MklGbrd2HjeLiIzxRFlb7nTmlaOY1M30fpocIxAW5KFC5g1Q39RmDuFEWpqiRxeEBQwgrjDVvbT9MSK3sB5UulNUT4XRkLKAjnuliDe5TRmJodQ9Ub9qDh39cjO1_euWXtoGy8AbQzG4Na_8LFPMsaJoXQyjsfEOZhChcyadGcbXruiQDsoHXqfLGpzrnzyg",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "7431e90d-f27e-407d-9147-e772c4b546da",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "e32b58cd-6a72-4db8-a0ca-20a7857b240a",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "invited",
+			"item": [
+				{
+					"name": "add party",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d1bee6dd-dc41-429d-a010-7927958493a1",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTEyODU5MjIxOTk4MTI1NzQ4NzM5IiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NTAyMiwiZXhwIjoxNTg0ODU3MDE3LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiXX0.DTGvTfLYXkerS-5SrzCsKMs3TNyQ_ESJXI3dwHRBJaV6AqexyfuEwc7wFOejuQ6JKMQAyGTGV30uRnQZYqNO8irFz9O6rCB_4AY2SoXdA8p_-KycdARvXPMqgKyow-9BiDqqsCH5liZY4nALZi6sYu0KpuIExrLfgyscty-56cs8qqZ9yxVgFOjeF1Zn07uYDiqpQKfJ7ElfgJdQgcLqCJCfR_ooyUX3w4KSktMgLLT-IfnfcJib3vn8jm1jMUYuUb8rsFh639wTThHnXYDa0LT7Us28frviWOxiHprZYuwLIddPI336GAxqNJCX39ODHN6djwrVVLHPPA_D8sCkBQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Jazz time",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "lets have a smoth night",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2020-04-01 19:00:00",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "los angeles ",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "california",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete party",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2eacc25a-6cc7-403e-bc2f-171ff38563f2",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTEyODU5MjIxOTk4MTI1NzQ4NzM5IiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NTAyMiwiZXhwIjoxNTg0ODU3MDE3LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiXX0.DTGvTfLYXkerS-5SrzCsKMs3TNyQ_ESJXI3dwHRBJaV6AqexyfuEwc7wFOejuQ6JKMQAyGTGV30uRnQZYqNO8irFz9O6rCB_4AY2SoXdA8p_-KycdARvXPMqgKyow-9BiDqqsCH5liZY4nALZi6sYu0KpuIExrLfgyscty-56cs8qqZ9yxVgFOjeF1Zn07uYDiqpQKfJ7ElfgJdQgcLqCJCfR_ooyUX3w4KSktMgLLT-IfnfcJib3vn8jm1jMUYuUb8rsFh639wTThHnXYDa0LT7Us28frviWOxiHprZYuwLIddPI336GAxqNJCX39ODHN6djwrVVLHPPA_D8sCkBQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Jazz time",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get parties",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "878d0003-191d-49f1-8f40-92b1921738be",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTEyODU5MjIxOTk4MTI1NzQ4NzM5IiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NTAyMiwiZXhwIjoxNTg0ODU3MDE3LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiXX0.DTGvTfLYXkerS-5SrzCsKMs3TNyQ_ESJXI3dwHRBJaV6AqexyfuEwc7wFOejuQ6JKMQAyGTGV30uRnQZYqNO8irFz9O6rCB_4AY2SoXdA8p_-KycdARvXPMqgKyow-9BiDqqsCH5liZY4nALZi6sYu0KpuIExrLfgyscty-56cs8qqZ9yxVgFOjeF1Zn07uYDiqpQKfJ7ElfgJdQgcLqCJCfR_ooyUX3w4KSktMgLLT-IfnfcJib3vn8jm1jMUYuUb8rsFh639wTThHnXYDa0LT7Us28frviWOxiHprZYuwLIddPI336GAxqNJCX39ODHN6djwrVVLHPPA_D8sCkBQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update party",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6421184c-096b-426c-ad2d-559db823dd99",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTEyODU5MjIxOTk4MTI1NzQ4NzM5IiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NTAyMiwiZXhwIjoxNTg0ODU3MDE3LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiXX0.DTGvTfLYXkerS-5SrzCsKMs3TNyQ_ESJXI3dwHRBJaV6AqexyfuEwc7wFOejuQ6JKMQAyGTGV30uRnQZYqNO8irFz9O6rCB_4AY2SoXdA8p_-KycdARvXPMqgKyow-9BiDqqsCH5liZY4nALZi6sYu0KpuIExrLfgyscty-56cs8qqZ9yxVgFOjeF1Zn07uYDiqpQKfJ7ElfgJdQgcLqCJCfR_ooyUX3w4KSktMgLLT-IfnfcJib3vn8jm1jMUYuUb8rsFh639wTThHnXYDa0LT7Us28frviWOxiHprZYuwLIddPI336GAxqNJCX39ODHN6djwrVVLHPPA_D8sCkBQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Jazz time",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "lets have a smoth night",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2020-04-01 19:00:00",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "los angeles ",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "california",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/update",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read party details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "dfa63b58-fb99-44b3-b6de-72676a5562b2",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTEyODU5MjIxOTk4MTI1NzQ4NzM5IiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NTAyMiwiZXhwIjoxNTg0ODU3MDE3LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiXX0.DTGvTfLYXkerS-5SrzCsKMs3TNyQ_ESJXI3dwHRBJaV6AqexyfuEwc7wFOejuQ6JKMQAyGTGV30uRnQZYqNO8irFz9O6rCB_4AY2SoXdA8p_-KycdARvXPMqgKyow-9BiDqqsCH5liZY4nALZi6sYu0KpuIExrLfgyscty-56cs8qqZ9yxVgFOjeF1Zn07uYDiqpQKfJ7ElfgJdQgcLqCJCfR_ooyUX3w4KSktMgLLT-IfnfcJib3vn8jm1jMUYuUb8rsFh639wTThHnXYDa0LT7Us28frviWOxiHprZYuwLIddPI336GAxqNJCX39ODHN6djwrVVLHPPA_D8sCkBQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Jazz time",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/display",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"display"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add invitees",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f0edafb6-4f2f-46d7-9607-5d0953b1eeeb",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTEyODU5MjIxOTk4MTI1NzQ4NzM5IiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NTAyMiwiZXhwIjoxNTg0ODU3MDE3LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiXX0.DTGvTfLYXkerS-5SrzCsKMs3TNyQ_ESJXI3dwHRBJaV6AqexyfuEwc7wFOejuQ6JKMQAyGTGV30uRnQZYqNO8irFz9O6rCB_4AY2SoXdA8p_-KycdARvXPMqgKyow-9BiDqqsCH5liZY4nALZi6sYu0KpuIExrLfgyscty-56cs8qqZ9yxVgFOjeF1Zn07uYDiqpQKfJ7ElfgJdQgcLqCJCfR_ooyUX3w4KSktMgLLT-IfnfcJib3vn8jm1jMUYuUb8rsFh639wTThHnXYDa0LT7Us28frviWOxiHprZYuwLIddPI336GAxqNJCX39ODHN6djwrVVLHPPA_D8sCkBQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "souhaib",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "souhaib@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "123-123-1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/invitees/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"invitees",
+								"add"
+							]
+						},
+						"description": "\t\t\t"
+					},
+					"response": []
+				},
+				{
+					"name": "delete invitees",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5752867e-cb94-4647-a772-f4699cf065e6",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTEyODU5MjIxOTk4MTI1NzQ4NzM5IiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NTAyMiwiZXhwIjoxNTg0ODU3MDE3LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiXX0.DTGvTfLYXkerS-5SrzCsKMs3TNyQ_ESJXI3dwHRBJaV6AqexyfuEwc7wFOejuQ6JKMQAyGTGV30uRnQZYqNO8irFz9O6rCB_4AY2SoXdA8p_-KycdARvXPMqgKyow-9BiDqqsCH5liZY4nALZi6sYu0KpuIExrLfgyscty-56cs8qqZ9yxVgFOjeF1Zn07uYDiqpQKfJ7ElfgJdQgcLqCJCfR_ooyUX3w4KSktMgLLT-IfnfcJib3vn8jm1jMUYuUb8rsFh639wTThHnXYDa0LT7Us28frviWOxiHprZYuwLIddPI336GAxqNJCX39ODHN6djwrVVLHPPA_D8sCkBQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "souhaib",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/invitees/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"invitees",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete invitees from party list",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5752867e-cb94-4647-a772-f4699cf065e6",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTEyODU5MjIxOTk4MTI1NzQ4NzM5IiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NTAyMiwiZXhwIjoxNTg0ODU3MDE3LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiXX0.DTGvTfLYXkerS-5SrzCsKMs3TNyQ_ESJXI3dwHRBJaV6AqexyfuEwc7wFOejuQ6JKMQAyGTGV30uRnQZYqNO8irFz9O6rCB_4AY2SoXdA8p_-KycdARvXPMqgKyow-9BiDqqsCH5liZY4nALZi6sYu0KpuIExrLfgyscty-56cs8qqZ9yxVgFOjeF1Zn07uYDiqpQKfJ7ElfgJdQgcLqCJCfR_ooyUX3w4KSktMgLLT-IfnfcJib3vn8jm1jMUYuUb8rsFh639wTThHnXYDa0LT7Us28frviWOxiHprZYuwLIddPI336GAxqNJCX39ODHN6djwrVVLHPPA_D8sCkBQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "party_name",
+									"value": "Jazz time",
+									"type": "text"
+								},
+								{
+									"key": "invitee_email",
+									"value": "souhaib@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/invitees/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"invitees",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get invitees",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ac912e9c-f537-4a08-bb56-696b54beaaff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTEyODU5MjIxOTk4MTI1NzQ4NzM5IiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NTAyMiwiZXhwIjoxNTg0ODU3MDE3LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiXX0.DTGvTfLYXkerS-5SrzCsKMs3TNyQ_ESJXI3dwHRBJaV6AqexyfuEwc7wFOejuQ6JKMQAyGTGV30uRnQZYqNO8irFz9O6rCB_4AY2SoXdA8p_-KycdARvXPMqgKyow-9BiDqqsCH5liZY4nALZi6sYu0KpuIExrLfgyscty-56cs8qqZ9yxVgFOjeF1Zn07uYDiqpQKfJ7ElfgJdQgcLqCJCfR_ooyUX3w4KSktMgLLT-IfnfcJib3vn8jm1jMUYuUb8rsFh639wTThHnXYDa0LT7Us28frviWOxiHprZYuwLIddPI336GAxqNJCX39ODHN6djwrVVLHPPA_D8sCkBQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/invitees",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"invitees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get list of invitees in a party",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ac912e9c-f537-4a08-bb56-696b54beaaff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTEyODU5MjIxOTk4MTI1NzQ4NzM5IiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NTAyMiwiZXhwIjoxNTg0ODU3MDE3LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiXX0.DTGvTfLYXkerS-5SrzCsKMs3TNyQ_ESJXI3dwHRBJaV6AqexyfuEwc7wFOejuQ6JKMQAyGTGV30uRnQZYqNO8irFz9O6rCB_4AY2SoXdA8p_-KycdARvXPMqgKyow-9BiDqqsCH5liZY4nALZi6sYu0KpuIExrLfgyscty-56cs8qqZ9yxVgFOjeF1Zn07uYDiqpQKfJ7ElfgJdQgcLqCJCfR_ooyUX3w4KSktMgLLT-IfnfcJib3vn8jm1jMUYuUb8rsFh639wTThHnXYDa0LT7Us28frviWOxiHprZYuwLIddPI336GAxqNJCX39ODHN6djwrVVLHPPA_D8sCkBQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "party_name",
+									"value": "Jazz time",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/invitees",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"invitees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read invitees details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "dfa63b58-fb99-44b3-b6de-72676a5562b2",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTEyODU5MjIxOTk4MTI1NzQ4NzM5IiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NTAyMiwiZXhwIjoxNTg0ODU3MDE3LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiXX0.DTGvTfLYXkerS-5SrzCsKMs3TNyQ_ESJXI3dwHRBJaV6AqexyfuEwc7wFOejuQ6JKMQAyGTGV30uRnQZYqNO8irFz9O6rCB_4AY2SoXdA8p_-KycdARvXPMqgKyow-9BiDqqsCH5liZY4nALZi6sYu0KpuIExrLfgyscty-56cs8qqZ9yxVgFOjeF1Zn07uYDiqpQKfJ7ElfgJdQgcLqCJCfR_ooyUX3w4KSktMgLLT-IfnfcJib3vn8jm1jMUYuUb8rsFh639wTThHnXYDa0LT7Us28frviWOxiHprZYuwLIddPI336GAxqNJCX39ODHN6djwrVVLHPPA_D8sCkBQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "souhaib",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/invitees/display",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"invitees",
+								"display"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add invitees to party",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "90cd723f-1afc-4138-aa5b-d7b92dc5f8e4",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTEyODU5MjIxOTk4MTI1NzQ4NzM5IiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDc4NTAyMiwiZXhwIjoxNTg0ODU3MDE3LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJyZWFkOmRldGFpbHMiLCJyZWFkOmludml0ZWVzX2RldGFpbHMiXX0.DTGvTfLYXkerS-5SrzCsKMs3TNyQ_ESJXI3dwHRBJaV6AqexyfuEwc7wFOejuQ6JKMQAyGTGV30uRnQZYqNO8irFz9O6rCB_4AY2SoXdA8p_-KycdARvXPMqgKyow-9BiDqqsCH5liZY4nALZi6sYu0KpuIExrLfgyscty-56cs8qqZ9yxVgFOjeF1Zn07uYDiqpQKfJ7ElfgJdQgcLqCJCfR_ooyUX3w4KSktMgLLT-IfnfcJib3vn8jm1jMUYuUb8rsFh639wTThHnXYDa0LT7Us28frviWOxiHprZYuwLIddPI336GAxqNJCX39ODHN6djwrVVLHPPA_D8sCkBQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "party_name",
+									"value": "Jazz time",
+									"type": "text"
+								},
+								{
+									"key": "invitee_email",
+									"value": "souhaib@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/parties/invitees/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"parties",
+								"invitees",
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEJOVVZFT0RkRE1VRkdRVEJCT0RBeU1FSkZNa1UwTkVSRFFUbERSRVkzTVVKRk9VUkVNQSJ9.eyJpc3MiOiJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE3NDE2MDk5NDI2ODc5NjQ2MTQzIiwiYXVkIjpbIlBhcnR5TGFuZF9BcGkiLCJodHRwczovL3NvdWhhaWJiZW5ib3V6aWQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU4NDczMTYwOSwiZXhwIjoxNTg0ODAzNjA0LCJhenAiOiJoWW4xdFptVWZMd2NHMlJ5eTA4ZGpYTDBkZXpRWFZsSCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJjcmVhdGU6cGFydHkiLCJkZWxldGU6cGFydHkiLCJyZWFkOmRldGFpbHMiLCJ1cGRhdGU6cGFydHkiXX0.UAeJwsCDF6-T-bGD_Q0pTnH1twaVQtEadAV61rQ_xGOLytaWY0ZKxHkva5lmEtLTHFYL9rw8plQeSL5_u8LsQDRb8_09Sw0jOUiOFstTkfFWqeBG6KjGfKTCU4m7U9nZNdM_G4_I-bykzXeqB80SI4MklGbrd2HjeLiIzxRFlb7nTmlaOY1M30fpocIxAW5KFC5g1Q39RmDuFEWpqiRxeEBQwgrjDVvbT9MSK3sB5UulNUT4XRkLKAjnuliDe5TRmJodQ9Ub9qDh39cjO1_euWXtoGy8AbQzG4Na_8LFPMsaJoXQyjsfEOZhChcyadGcbXruiQDsoHXqfLGpzrnzyg",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "7431e90d-f27e-407d-9147-e772c4b546da",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "e32b58cd-6a72-4db8-a0ca-20a7857b240a",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "bcb4d87e-109b-4bd4-abec-bddb409ee623",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b15698a8-dd07-4271-bb8a-aac5b4431152",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "42061ab7-3e47-4fe1-8a95-b8be869cab3d",
+			"key": "host",
+			"value": "http://127.0.0.1:8080/",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

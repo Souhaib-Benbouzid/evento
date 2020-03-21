@@ -1,0 +1,1195 @@
+{
+	"id": "3aaffc13-0b30-4745-95ea-1d2197a0cfcb",
+	"name": "PartyLand",
+	"timestamp": "2020-03-21T15:20:19.087Z",
+	"collection_id": "8083b2f3-d6e0-42cf-8cd2-460ddccb80d6",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 38,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "69e9bc46-aa35-4f7d-8923-dfd527831715",
+			"name": "add party",
+			"url": "http://127.0.0.1:8080/parties/add",
+			"time": 2886,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2886
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "20acf047-3ce4-4f44-947b-77205600ead2",
+			"name": "add invitees",
+			"url": "http://127.0.0.1:8080/invitees/add",
+			"time": 2078,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2078
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "5d2470de-bc1e-4b70-8648-1c901ee850dc",
+			"name": "get parties",
+			"url": "http://127.0.0.1:8080/parties/?page_num=1",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "9666713e-66a7-4c1c-882d-ea37e49a00ab",
+			"name": "get invitees",
+			"url": "http://127.0.0.1:8080/invitees",
+			"time": 2041,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2041
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "35916d11-91fc-42e2-9030-a978a5313e3a",
+			"name": "read party details",
+			"url": "http://127.0.0.1:8080/parties/display",
+			"time": 1006,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1006
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "cceb8f5a-d216-48ce-9854-b1d2701b1cee",
+			"name": "add invitees to party",
+			"url": "http://127.0.0.1:8080/parties/invitees/add",
+			"time": 3308,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3308
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "9daa927a-5d21-4dc4-afe8-4a10b0e3e878",
+			"name": "read invitees details",
+			"url": "http://127.0.0.1:8080/invitees/display",
+			"time": 1075,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1075
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c9f2685f-9e0e-4b6a-94a6-88f7df7d6c70",
+			"name": "get list of invitees in a party",
+			"url": "http://127.0.0.1:8080/parties/invitees",
+			"time": 3446,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3446
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c3c6443e-aec0-451f-b8c3-ffc9dd63a0a9",
+			"name": "update party",
+			"url": "http://127.0.0.1:8080/parties/update",
+			"time": 1067,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1067
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "1f0b1e0b-f6fe-4c56-83ba-ac90c4534068",
+			"name": "delete invitees from party list",
+			"url": "http://127.0.0.1:8080/parties/invitees/delete",
+			"time": 2145,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2145
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "d451e7b0-9433-4f29-a87e-f8d10193fffa",
+			"name": "delete invitees",
+			"url": "http://127.0.0.1:8080/invitees/delete",
+			"time": 2042,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2042
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "a5f6965a-0a47-4ee7-87d3-f55e0f3f8702",
+			"name": "delete party",
+			"url": "http://127.0.0.1:8080/parties/delete",
+			"time": 995,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				995
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "30a4c01e-24e8-4f7e-8ef0-6a0bd49d52d3",
+			"name": "add party for other tests",
+			"url": "http://127.0.0.1:8080/parties/add",
+			"time": 2288,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2288
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "7de2834c-147b-49d1-b6bd-81414ff13751",
+			"name": "add invitee for other tests",
+			"url": "http://127.0.0.1:8080/invitees/add",
+			"time": 1228,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1228
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "9c9e1fe9-5f82-4bcb-8428-6d30b6db3f84",
+			"name": "add party",
+			"url": "http://127.0.0.1:8080/parties/add",
+			"time": 5,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "06c53c46-fe7e-4f78-8ee5-0fcca92d1b33",
+			"name": "delete party",
+			"url": "http://127.0.0.1:8080/parties/delete",
+			"time": 9,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "89d025de-5d5c-4eb4-bf01-3c0c975845b7",
+			"name": "get parties",
+			"url": "http://127.0.0.1:8080/parties",
+			"time": 20,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				20
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "b21db67d-565c-4a5e-ad16-f04d81a9b67b",
+			"name": "add invitees",
+			"url": "http://127.0.0.1:8080/invitees/add",
+			"time": 10,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "5ada0501-d14d-4ab6-a04e-1871ecc6a451",
+			"name": "update party",
+			"url": "http://127.0.0.1:8080/parties/update",
+			"time": 24,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				24
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "759f98e4-1c4e-4b27-9cbe-4e97e5b4281f",
+			"name": "read party details",
+			"url": "http://127.0.0.1:8080/parties/display",
+			"time": 12,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "30df5249-b92b-44d7-92f4-8bb9e0fee693",
+			"name": "delete invitees",
+			"url": "http://127.0.0.1:8080/invitees/delete",
+			"time": 5,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "5497dd02-329b-458c-b119-d80aa8173381",
+			"name": "get invitees",
+			"url": "http://127.0.0.1:8080/invitees",
+			"time": 7,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "684e2186-37a2-4788-b3a6-3c518e39676b",
+			"name": "get list of invitees in a party",
+			"url": "http://127.0.0.1:8080/parties/invitees",
+			"time": 7,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "2020432e-0597-42c8-ba1b-27ad3c645d81",
+			"name": "add invitees to party",
+			"url": "http://127.0.0.1:8080/parties/invitees/add",
+			"time": 21,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				21
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "c5ebecc8-8e6c-4ed6-9126-93c652e7c1f7",
+			"name": "read invitees details",
+			"url": "http://127.0.0.1:8080/invitees/display",
+			"time": 6,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "49e1f2d7-3a42-496a-836f-4d31e37dd002",
+			"name": "delete invitees from party list",
+			"url": "http://127.0.0.1:8080/parties/invitees/delete",
+			"time": 7,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "5ba49831-ed44-4943-9cbb-f928edaa4d92",
+			"name": "add party",
+			"url": "http://127.0.0.1:8080/parties/add",
+			"time": 4592,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4592
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "71bd05f4-96ce-4fa9-b651-0c482f173caa",
+			"name": "delete party",
+			"url": "http://127.0.0.1:8080/parties/delete",
+			"time": 5070,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5070
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "2e42d53b-8cb0-4797-879f-c825b64a8de8",
+			"name": "get parties",
+			"url": "http://127.0.0.1:8080/parties/",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "958fa51b-68e7-4d80-80ef-9ee7c85d7b65",
+			"name": "update party",
+			"url": "http://127.0.0.1:8080/parties/update",
+			"time": 2988,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2988
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "eb8aac2b-12cd-4728-bea3-9bcfe752e8ce",
+			"name": "read party details",
+			"url": "http://127.0.0.1:8080/parties/display",
+			"time": 1018,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1018
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "f41834e6-59d1-424a-bc8c-41d4f415f264",
+			"name": "add invitees",
+			"url": "http://127.0.0.1:8080/invitees/add",
+			"time": 1571,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1571
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "3d49f196-1ef0-43af-88fe-f8140cd1ca01",
+			"name": "delete invitees",
+			"url": "http://127.0.0.1:8080/invitees/delete",
+			"time": 3580,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3580
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "9de46aa1-f05c-40e9-9801-4b73f99c7d0f",
+			"name": "delete invitees from party list",
+			"url": "http://127.0.0.1:8080/parties/invitees/delete",
+			"time": 2369,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2369
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "94f7375b-f6bc-4b62-92b1-17d2a411c19c",
+			"name": "get invitees",
+			"url": "http://127.0.0.1:8080/invitees",
+			"time": 3591,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3591
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "25ffd251-aa5d-48dd-bfc4-a5cf4327ed7f",
+			"name": "get list of invitees in a party",
+			"url": "http://127.0.0.1:8080/parties/invitees",
+			"time": 3245,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3245
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "421730d7-6523-46ba-b98c-bf1be3533a45",
+			"name": "read invitees details",
+			"url": "http://127.0.0.1:8080/invitees/display",
+			"time": 985,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				985
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "7090fe76-0752-414e-9e58-702cc626c806",
+			"name": "add invitees to party",
+			"url": "http://127.0.0.1:8080/parties/invitees/add",
+			"time": 1999,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1999
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"collection": {
+		"requests": [
+			{
+				"id": "69e9bc46-aa35-4f7d-8923-dfd527831715",
+				"method": "POST"
+			},
+			{
+				"id": "20acf047-3ce4-4f44-947b-77205600ead2",
+				"method": "POST"
+			},
+			{
+				"id": "5d2470de-bc1e-4b70-8648-1c901ee850dc",
+				"method": "GET"
+			},
+			{
+				"id": "9666713e-66a7-4c1c-882d-ea37e49a00ab",
+				"method": "GET"
+			},
+			{
+				"id": "35916d11-91fc-42e2-9030-a978a5313e3a",
+				"method": "GET"
+			},
+			{
+				"id": "cceb8f5a-d216-48ce-9854-b1d2701b1cee",
+				"method": "POST"
+			},
+			{
+				"id": "9daa927a-5d21-4dc4-afe8-4a10b0e3e878",
+				"method": "GET"
+			},
+			{
+				"id": "c9f2685f-9e0e-4b6a-94a6-88f7df7d6c70",
+				"method": "GET"
+			},
+			{
+				"id": "c3c6443e-aec0-451f-b8c3-ffc9dd63a0a9",
+				"method": "PATCH"
+			},
+			{
+				"id": "1f0b1e0b-f6fe-4c56-83ba-ac90c4534068",
+				"method": "DELETE"
+			},
+			{
+				"id": "d451e7b0-9433-4f29-a87e-f8d10193fffa",
+				"method": "DELETE"
+			},
+			{
+				"id": "a5f6965a-0a47-4ee7-87d3-f55e0f3f8702",
+				"method": "DELETE"
+			},
+			{
+				"id": "30a4c01e-24e8-4f7e-8ef0-6a0bd49d52d3",
+				"method": "POST"
+			},
+			{
+				"id": "7de2834c-147b-49d1-b6bd-81414ff13751",
+				"method": "POST"
+			},
+			{
+				"id": "9c9e1fe9-5f82-4bcb-8428-6d30b6db3f84",
+				"method": "POST"
+			},
+			{
+				"id": "06c53c46-fe7e-4f78-8ee5-0fcca92d1b33",
+				"method": "DELETE"
+			},
+			{
+				"id": "89d025de-5d5c-4eb4-bf01-3c0c975845b7",
+				"method": "GET"
+			},
+			{
+				"id": "b21db67d-565c-4a5e-ad16-f04d81a9b67b",
+				"method": "POST"
+			},
+			{
+				"id": "5ada0501-d14d-4ab6-a04e-1871ecc6a451",
+				"method": "PATCH"
+			},
+			{
+				"id": "759f98e4-1c4e-4b27-9cbe-4e97e5b4281f",
+				"method": "GET"
+			},
+			{
+				"id": "30df5249-b92b-44d7-92f4-8bb9e0fee693",
+				"method": "DELETE"
+			},
+			{
+				"id": "5497dd02-329b-458c-b119-d80aa8173381",
+				"method": "GET"
+			},
+			{
+				"id": "684e2186-37a2-4788-b3a6-3c518e39676b",
+				"method": "GET"
+			},
+			{
+				"id": "2020432e-0597-42c8-ba1b-27ad3c645d81",
+				"method": "POST"
+			},
+			{
+				"id": "c5ebecc8-8e6c-4ed6-9126-93c652e7c1f7",
+				"method": "GET"
+			},
+			{
+				"id": "49e1f2d7-3a42-496a-836f-4d31e37dd002",
+				"method": "DELETE"
+			},
+			{
+				"id": "5ba49831-ed44-4943-9cbb-f928edaa4d92",
+				"method": "POST"
+			},
+			{
+				"id": "71bd05f4-96ce-4fa9-b651-0c482f173caa",
+				"method": "DELETE"
+			},
+			{
+				"id": "2e42d53b-8cb0-4797-879f-c825b64a8de8",
+				"method": "GET"
+			},
+			{
+				"id": "958fa51b-68e7-4d80-80ef-9ee7c85d7b65",
+				"method": "PATCH"
+			},
+			{
+				"id": "eb8aac2b-12cd-4728-bea3-9bcfe752e8ce",
+				"method": "GET"
+			},
+			{
+				"id": "f41834e6-59d1-424a-bc8c-41d4f415f264",
+				"method": "POST"
+			},
+			{
+				"id": "3d49f196-1ef0-43af-88fe-f8140cd1ca01",
+				"method": "DELETE"
+			},
+			{
+				"id": "9de46aa1-f05c-40e9-9801-4b73f99c7d0f",
+				"method": "DELETE"
+			},
+			{
+				"id": "94f7375b-f6bc-4b62-92b1-17d2a411c19c",
+				"method": "GET"
+			},
+			{
+				"id": "25ffd251-aa5d-48dd-bfc4-a5cf4327ed7f",
+				"method": "GET"
+			},
+			{
+				"id": "421730d7-6523-46ba-b98c-bf1be3533a45",
+				"method": "GET"
+			},
+			{
+				"id": "7090fe76-0752-414e-9e58-702cc626c806",
+				"method": "POST"
+			}
+		]
+	}
+}
