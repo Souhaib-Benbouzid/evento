@@ -25,10 +25,9 @@ def create_app(test_config=None):
 
 app = create_app()
 
-app.config['SECRET_KEY'] = secrets.token_hex(16)
+app.config['SECRET_KEY'] = SECRET_KEY
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://souhaib:123456@localhost:5432/evento'
-app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 1
+app.config['SQLALCHEMY_DATABASE_URI'] = SQLALCHEMY_DATABASE_URI
 db = SQLAlchemy(app)
 
 db.create_all()
@@ -235,6 +234,11 @@ def requires_auth(permission= ''):
   return requires_auth_decorator
 
 # *******************************************************               ROUTES                  *********************************************************
+
+@app.route('/', methods=['GET'])
+def index():
+  return render_template('pages/index.html')
+
 
 #******************************    Party     **************************************#
 @app.route('/parties/', methods=['GET'])
