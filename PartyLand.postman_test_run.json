@@ -1,7 +1,7 @@
 {
-	"id": "3aaffc13-0b30-4745-95ea-1d2197a0cfcb",
+	"id": "dcd2722d-a52d-4bca-b9d2-1a2cab44645f",
 	"name": "PartyLand",
-	"timestamp": "2020-03-21T15:20:19.087Z",
+	"timestamp": "2020-03-22T16:00:21.142Z",
 	"collection_id": "8083b2f3-d6e0-42cf-8cd2-460ddccb80d6",
 	"folder_id": 0,
 	"environment_id": "0",
@@ -11,8 +11,8 @@
 		{
 			"id": "69e9bc46-aa35-4f7d-8923-dfd527831715",
 			"name": "add party",
-			"url": "http://127.0.0.1:8080/parties/add",
-			"time": 2886,
+			"url": "https://evento13.herokuapp.com/parties/add",
+			"time": 1135,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -27,7 +27,7 @@
 				}
 			},
 			"times": [
-				2886
+				1135
 			],
 			"allTests": [
 				{
@@ -38,8 +38,8 @@
 		{
 			"id": "20acf047-3ce4-4f44-947b-77205600ead2",
 			"name": "add invitees",
-			"url": "http://127.0.0.1:8080/invitees/add",
-			"time": 2078,
+			"url": "https://evento13.herokuapp.com/invitees/add",
+			"time": 525,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -54,7 +54,7 @@
 				}
 			},
 			"times": [
-				2078
+				525
 			],
 			"allTests": [
 				{
@@ -65,8 +65,8 @@
 		{
 			"id": "5d2470de-bc1e-4b70-8648-1c901ee850dc",
 			"name": "get parties",
-			"url": "http://127.0.0.1:8080/parties/?page_num=1",
-			"time": 11,
+			"url": "https://evento13.herokuapp.com/parties/",
+			"time": 165,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -81,7 +81,7 @@
 				}
 			},
 			"times": [
-				11
+				165
 			],
 			"allTests": [
 				{
@@ -92,8 +92,8 @@
 		{
 			"id": "9666713e-66a7-4c1c-882d-ea37e49a00ab",
 			"name": "get invitees",
-			"url": "http://127.0.0.1:8080/invitees",
-			"time": 2041,
+			"url": "https://evento13.herokuapp.com/invitees",
+			"time": 496,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -108,7 +108,7 @@
 				}
 			},
 			"times": [
-				2041
+				496
 			],
 			"allTests": [
 				{
@@ -119,8 +119,8 @@
 		{
 			"id": "35916d11-91fc-42e2-9030-a978a5313e3a",
 			"name": "read party details",
-			"url": "http://127.0.0.1:8080/parties/display",
-			"time": 1006,
+			"url": "https://evento13.herokuapp.com/parties/display",
+			"time": 519,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -135,7 +135,7 @@
 				}
 			},
 			"times": [
-				1006
+				519
 			],
 			"allTests": [
 				{
@@ -146,8 +146,8 @@
 		{
 			"id": "cceb8f5a-d216-48ce-9854-b1d2701b1cee",
 			"name": "add invitees to party",
-			"url": "http://127.0.0.1:8080/parties/invitees/add",
-			"time": 3308,
+			"url": "https://evento13.herokuapp.com/parties/invitees/add",
+			"time": 549,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -162,7 +162,7 @@
 				}
 			},
 			"times": [
-				3308
+				549
 			],
 			"allTests": [
 				{
@@ -173,8 +173,8 @@
 		{
 			"id": "9daa927a-5d21-4dc4-afe8-4a10b0e3e878",
 			"name": "read invitees details",
-			"url": "http://127.0.0.1:8080/invitees/display",
-			"time": 1075,
+			"url": "https://evento13.herokuapp.com/invitees/display",
+			"time": 509,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -189,7 +189,7 @@
 				}
 			},
 			"times": [
-				1075
+				509
 			],
 			"allTests": [
 				{
@@ -200,8 +200,8 @@
 		{
 			"id": "c9f2685f-9e0e-4b6a-94a6-88f7df7d6c70",
 			"name": "get list of invitees in a party",
-			"url": "http://127.0.0.1:8080/parties/invitees",
-			"time": 3446,
+			"url": "https://evento13.herokuapp.com/parties/invitees",
+			"time": 529,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -216,7 +216,7 @@
 				}
 			},
 			"times": [
-				3446
+				529
 			],
 			"allTests": [
 				{
@@ -227,8 +227,8 @@
 		{
 			"id": "c3c6443e-aec0-451f-b8c3-ffc9dd63a0a9",
 			"name": "update party",
-			"url": "http://127.0.0.1:8080/parties/update",
-			"time": 1067,
+			"url": "https://evento13.herokuapp.com/parties/update",
+			"time": 520,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -243,7 +243,7 @@
 				}
 			},
 			"times": [
-				1067
+				520
 			],
 			"allTests": [
 				{
@@ -254,8 +254,8 @@
 		{
 			"id": "1f0b1e0b-f6fe-4c56-83ba-ac90c4534068",
 			"name": "delete invitees from party list",
-			"url": "http://127.0.0.1:8080/parties/invitees/delete",
-			"time": 2145,
+			"url": "https://evento13.herokuapp.com/parties/invitees/delete",
+			"time": 555,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -270,7 +270,7 @@
 				}
 			},
 			"times": [
-				2145
+				555
 			],
 			"allTests": [
 				{
@@ -281,8 +281,8 @@
 		{
 			"id": "d451e7b0-9433-4f29-a87e-f8d10193fffa",
 			"name": "delete invitees",
-			"url": "http://127.0.0.1:8080/invitees/delete",
-			"time": 2042,
+			"url": "https://evento13.herokuapp.com/invitees/delete",
+			"time": 492,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -297,7 +297,7 @@
 				}
 			},
 			"times": [
-				2042
+				492
 			],
 			"allTests": [
 				{
@@ -308,8 +308,8 @@
 		{
 			"id": "a5f6965a-0a47-4ee7-87d3-f55e0f3f8702",
 			"name": "delete party",
-			"url": "http://127.0.0.1:8080/parties/delete",
-			"time": 995,
+			"url": "https://evento13.herokuapp.com/parties/delete",
+			"time": 510,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -324,7 +324,7 @@
 				}
 			},
 			"times": [
-				995
+				510
 			],
 			"allTests": [
 				{
@@ -335,8 +335,8 @@
 		{
 			"id": "30a4c01e-24e8-4f7e-8ef0-6a0bd49d52d3",
 			"name": "add party for other tests",
-			"url": "http://127.0.0.1:8080/parties/add",
-			"time": 2288,
+			"url": "https://evento13.herokuapp.com/parties/add",
+			"time": 498,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -351,7 +351,7 @@
 				}
 			},
 			"times": [
-				2288
+				498
 			],
 			"allTests": [
 				{
@@ -362,8 +362,8 @@
 		{
 			"id": "7de2834c-147b-49d1-b6bd-81414ff13751",
 			"name": "add invitee for other tests",
-			"url": "http://127.0.0.1:8080/invitees/add",
-			"time": 1228,
+			"url": "https://evento13.herokuapp.com/invitees/add",
+			"time": 516,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -378,7 +378,7 @@
 				}
 			},
 			"times": [
-				1228
+				516
 			],
 			"allTests": [
 				{
@@ -389,8 +389,8 @@
 		{
 			"id": "9c9e1fe9-5f82-4bcb-8428-6d30b6db3f84",
 			"name": "add party",
-			"url": "http://127.0.0.1:8080/parties/add",
-			"time": 5,
+			"url": "https://evento13.herokuapp.com/parties/add",
+			"time": 159,
 			"responseCode": {
 				"code": 403,
 				"name": "FORBIDDEN"
@@ -405,7 +405,7 @@
 				}
 			},
 			"times": [
-				5
+				159
 			],
 			"allTests": [
 				{
@@ -416,8 +416,8 @@
 		{
 			"id": "06c53c46-fe7e-4f78-8ee5-0fcca92d1b33",
 			"name": "delete party",
-			"url": "http://127.0.0.1:8080/parties/delete",
-			"time": 9,
+			"url": "https://evento13.herokuapp.com/parties/delete",
+			"time": 507,
 			"responseCode": {
 				"code": 403,
 				"name": "FORBIDDEN"
@@ -432,7 +432,7 @@
 				}
 			},
 			"times": [
-				9
+				507
 			],
 			"allTests": [
 				{
@@ -443,8 +443,8 @@
 		{
 			"id": "89d025de-5d5c-4eb4-bf01-3c0c975845b7",
 			"name": "get parties",
-			"url": "http://127.0.0.1:8080/parties",
-			"time": 20,
+			"url": "https://evento13.herokuapp.com/parties",
+			"time": 151,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -459,7 +459,7 @@
 				}
 			},
 			"times": [
-				20
+				151
 			],
 			"allTests": [
 				{
@@ -470,8 +470,8 @@
 		{
 			"id": "b21db67d-565c-4a5e-ad16-f04d81a9b67b",
 			"name": "add invitees",
-			"url": "http://127.0.0.1:8080/invitees/add",
-			"time": 10,
+			"url": "https://evento13.herokuapp.com/invitees/add",
+			"time": 156,
 			"responseCode": {
 				"code": 403,
 				"name": "FORBIDDEN"
@@ -486,7 +486,7 @@
 				}
 			},
 			"times": [
-				10
+				156
 			],
 			"allTests": [
 				{
@@ -497,8 +497,8 @@
 		{
 			"id": "5ada0501-d14d-4ab6-a04e-1871ecc6a451",
 			"name": "update party",
-			"url": "http://127.0.0.1:8080/parties/update",
-			"time": 24,
+			"url": "https://evento13.herokuapp.com/parties/update",
+			"time": 157,
 			"responseCode": {
 				"code": 403,
 				"name": "FORBIDDEN"
@@ -513,7 +513,7 @@
 				}
 			},
 			"times": [
-				24
+				157
 			],
 			"allTests": [
 				{
@@ -524,8 +524,8 @@
 		{
 			"id": "759f98e4-1c4e-4b27-9cbe-4e97e5b4281f",
 			"name": "read party details",
-			"url": "http://127.0.0.1:8080/parties/display",
-			"time": 12,
+			"url": "https://evento13.herokuapp.com/parties/display",
+			"time": 154,
 			"responseCode": {
 				"code": 403,
 				"name": "FORBIDDEN"
@@ -540,7 +540,7 @@
 				}
 			},
 			"times": [
-				12
+				154
 			],
 			"allTests": [
 				{
@@ -551,8 +551,8 @@
 		{
 			"id": "30df5249-b92b-44d7-92f4-8bb9e0fee693",
 			"name": "delete invitees",
-			"url": "http://127.0.0.1:8080/invitees/delete",
-			"time": 5,
+			"url": "https://evento13.herokuapp.com/invitees/delete",
+			"time": 156,
 			"responseCode": {
 				"code": 403,
 				"name": "FORBIDDEN"
@@ -567,7 +567,7 @@
 				}
 			},
 			"times": [
-				5
+				156
 			],
 			"allTests": [
 				{
@@ -578,8 +578,8 @@
 		{
 			"id": "5497dd02-329b-458c-b119-d80aa8173381",
 			"name": "get invitees",
-			"url": "http://127.0.0.1:8080/invitees",
-			"time": 7,
+			"url": "https://evento13.herokuapp.com/invitees",
+			"time": 148,
 			"responseCode": {
 				"code": 403,
 				"name": "FORBIDDEN"
@@ -594,7 +594,7 @@
 				}
 			},
 			"times": [
-				7
+				148
 			],
 			"allTests": [
 				{
@@ -605,8 +605,8 @@
 		{
 			"id": "684e2186-37a2-4788-b3a6-3c518e39676b",
 			"name": "get list of invitees in a party",
-			"url": "http://127.0.0.1:8080/parties/invitees",
-			"time": 7,
+			"url": "https://evento13.herokuapp.com/parties/invitees",
+			"time": 149,
 			"responseCode": {
 				"code": 403,
 				"name": "FORBIDDEN"
@@ -621,7 +621,7 @@
 				}
 			},
 			"times": [
-				7
+				149
 			],
 			"allTests": [
 				{
@@ -632,8 +632,8 @@
 		{
 			"id": "2020432e-0597-42c8-ba1b-27ad3c645d81",
 			"name": "add invitees to party",
-			"url": "http://127.0.0.1:8080/parties/invitees/add",
-			"time": 21,
+			"url": "https://evento13.herokuapp.com/parties/invitees/add",
+			"time": 159,
 			"responseCode": {
 				"code": 403,
 				"name": "FORBIDDEN"
@@ -648,7 +648,7 @@
 				}
 			},
 			"times": [
-				21
+				159
 			],
 			"allTests": [
 				{
@@ -659,8 +659,8 @@
 		{
 			"id": "c5ebecc8-8e6c-4ed6-9126-93c652e7c1f7",
 			"name": "read invitees details",
-			"url": "http://127.0.0.1:8080/invitees/display",
-			"time": 6,
+			"url": "https://evento13.herokuapp.com/invitees/display",
+			"time": 153,
 			"responseCode": {
 				"code": 403,
 				"name": "FORBIDDEN"
@@ -675,7 +675,7 @@
 				}
 			},
 			"times": [
-				6
+				153
 			],
 			"allTests": [
 				{
@@ -686,8 +686,8 @@
 		{
 			"id": "49e1f2d7-3a42-496a-836f-4d31e37dd002",
 			"name": "delete invitees from party list",
-			"url": "http://127.0.0.1:8080/parties/invitees/delete",
-			"time": 7,
+			"url": "https://evento13.herokuapp.com/parties/invitees/delete",
+			"time": 154,
 			"responseCode": {
 				"code": 403,
 				"name": "FORBIDDEN"
@@ -702,7 +702,7 @@
 				}
 			},
 			"times": [
-				7
+				154
 			],
 			"allTests": [
 				{
@@ -713,8 +713,8 @@
 		{
 			"id": "5ba49831-ed44-4943-9cbb-f928edaa4d92",
 			"name": "add party",
-			"url": "http://127.0.0.1:8080/parties/add",
-			"time": 4592,
+			"url": "https://evento13.herokuapp.com/parties/add",
+			"time": 479,
 			"responseCode": {
 				"code": 403,
 				"name": "FORBIDDEN"
@@ -729,7 +729,7 @@
 				}
 			},
 			"times": [
-				4592
+				479
 			],
 			"allTests": [
 				{
@@ -740,8 +740,8 @@
 		{
 			"id": "71bd05f4-96ce-4fa9-b651-0c482f173caa",
 			"name": "delete party",
-			"url": "http://127.0.0.1:8080/parties/delete",
-			"time": 5070,
+			"url": "https://evento13.herokuapp.com/parties/delete",
+			"time": 516,
 			"responseCode": {
 				"code": 403,
 				"name": "FORBIDDEN"
@@ -756,7 +756,7 @@
 				}
 			},
 			"times": [
-				5070
+				516
 			],
 			"allTests": [
 				{
@@ -767,8 +767,8 @@
 		{
 			"id": "2e42d53b-8cb0-4797-879f-c825b64a8de8",
 			"name": "get parties",
-			"url": "http://127.0.0.1:8080/parties/",
-			"time": 10,
+			"url": "https://evento13.herokuapp.com/parties/",
+			"time": 162,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -783,7 +783,7 @@
 				}
 			},
 			"times": [
-				10
+				162
 			],
 			"allTests": [
 				{
@@ -794,8 +794,8 @@
 		{
 			"id": "958fa51b-68e7-4d80-80ef-9ee7c85d7b65",
 			"name": "update party",
-			"url": "http://127.0.0.1:8080/parties/update",
-			"time": 2988,
+			"url": "https://evento13.herokuapp.com/parties/update",
+			"time": 518,
 			"responseCode": {
 				"code": 403,
 				"name": "FORBIDDEN"
@@ -810,7 +810,7 @@
 				}
 			},
 			"times": [
-				2988
+				518
 			],
 			"allTests": [
 				{
@@ -821,8 +821,8 @@
 		{
 			"id": "eb8aac2b-12cd-4728-bea3-9bcfe752e8ce",
 			"name": "read party details",
-			"url": "http://127.0.0.1:8080/parties/display",
-			"time": 1018,
+			"url": "https://evento13.herokuapp.com/parties/display",
+			"time": 505,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -837,7 +837,7 @@
 				}
 			},
 			"times": [
-				1018
+				505
 			],
 			"allTests": [
 				{
@@ -848,8 +848,8 @@
 		{
 			"id": "f41834e6-59d1-424a-bc8c-41d4f415f264",
 			"name": "add invitees",
-			"url": "http://127.0.0.1:8080/invitees/add",
-			"time": 1571,
+			"url": "https://evento13.herokuapp.com/invitees/add",
+			"time": 483,
 			"responseCode": {
 				"code": 403,
 				"name": "FORBIDDEN"
@@ -864,7 +864,7 @@
 				}
 			},
 			"times": [
-				1571
+				483
 			],
 			"allTests": [
 				{
@@ -875,8 +875,8 @@
 		{
 			"id": "3d49f196-1ef0-43af-88fe-f8140cd1ca01",
 			"name": "delete invitees",
-			"url": "http://127.0.0.1:8080/invitees/delete",
-			"time": 3580,
+			"url": "https://evento13.herokuapp.com/invitees/delete",
+			"time": 485,
 			"responseCode": {
 				"code": 403,
 				"name": "FORBIDDEN"
@@ -891,7 +891,7 @@
 				}
 			},
 			"times": [
-				3580
+				485
 			],
 			"allTests": [
 				{
@@ -902,8 +902,8 @@
 		{
 			"id": "9de46aa1-f05c-40e9-9801-4b73f99c7d0f",
 			"name": "delete invitees from party list",
-			"url": "http://127.0.0.1:8080/parties/invitees/delete",
-			"time": 2369,
+			"url": "https://evento13.herokuapp.com/parties/invitees/delete",
+			"time": 507,
 			"responseCode": {
 				"code": 403,
 				"name": "FORBIDDEN"
@@ -918,7 +918,7 @@
 				}
 			},
 			"times": [
-				2369
+				507
 			],
 			"allTests": [
 				{
@@ -929,8 +929,8 @@
 		{
 			"id": "94f7375b-f6bc-4b62-92b1-17d2a411c19c",
 			"name": "get invitees",
-			"url": "http://127.0.0.1:8080/invitees",
-			"time": 3591,
+			"url": "https://evento13.herokuapp.com/invitees",
+			"time": 482,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -945,7 +945,7 @@
 				}
 			},
 			"times": [
-				3591
+				482
 			],
 			"allTests": [
 				{
@@ -956,8 +956,8 @@
 		{
 			"id": "25ffd251-aa5d-48dd-bfc4-a5cf4327ed7f",
 			"name": "get list of invitees in a party",
-			"url": "http://127.0.0.1:8080/parties/invitees",
-			"time": 3245,
+			"url": "https://evento13.herokuapp.com/parties/invitees",
+			"time": 483,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -972,7 +972,7 @@
 				}
 			},
 			"times": [
-				3245
+				483
 			],
 			"allTests": [
 				{
@@ -983,8 +983,8 @@
 		{
 			"id": "421730d7-6523-46ba-b98c-bf1be3533a45",
 			"name": "read invitees details",
-			"url": "http://127.0.0.1:8080/invitees/display",
-			"time": 985,
+			"url": "https://evento13.herokuapp.com/invitees/display",
+			"time": 518,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -999,7 +999,7 @@
 				}
 			},
 			"times": [
-				985
+				518
 			],
 			"allTests": [
 				{
@@ -1010,8 +1010,8 @@
 		{
 			"id": "7090fe76-0752-414e-9e58-702cc626c806",
 			"name": "add invitees to party",
-			"url": "http://127.0.0.1:8080/parties/invitees/add",
-			"time": 1999,
+			"url": "https://evento13.herokuapp.com/parties/invitees/add",
+			"time": 465,
 			"responseCode": {
 				"code": 403,
 				"name": "FORBIDDEN"
@@ -1026,7 +1026,7 @@
 				}
 			},
 			"times": [
-				1999
+				465
 			],
 			"allTests": [
 				{

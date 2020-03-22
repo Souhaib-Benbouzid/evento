@@ -69,7 +69,7 @@ python app.py
 currently the api is underdevelopment and only run on localhost.
 
 #### API ENDPOINTS
-base : http://127.0.0.1/
+Base URL : https://evento13.herokuapp.com
 
 ##### GET /parties
 
