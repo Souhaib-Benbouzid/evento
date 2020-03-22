@@ -61,7 +61,46 @@ python app.py
 4. Create a new API
 
 
+
+
+
+
+
+
 ## API Documentation 
+
+#### RBAC:
+
+there are 3 type of roles:
+
+Host: superuser,can perform all crud operations on parties and invitees.
+permissions:
+[
+    "add:invitees",
+    "create:party",
+    "delete:invitees",
+    "delete:party",
+    "read:details",
+    "read:invitees_details",
+    "update:invitees",
+    "update:party"
+  ]
+
+Invitee: previliged user, can read party details and get list invitees and details.
+permissions:
+[
+    "read:details",
+    "read:invitees_details"
+  ]
+  
+Not invited: regular user, can see parties in the area. 
+permissions:
+[]
+
+
+
+
+
 
 #### API ENDPOINTS
 Base URL : https://evento13.herokuapp.com
