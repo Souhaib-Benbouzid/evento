@@ -39,12 +39,9 @@ create the models
 
 ```bash
 
-python 
-
-from app import db
-
-db.create_all()
-
+python manage.py db init
+python manage.py db migrate
+python manage.py db upgrade
 ```
 
 
@@ -65,8 +62,6 @@ python app.py
 
 
 ## API Documentation 
-
-currently the api is underdevelopment and only run on localhost.
 
 #### API ENDPOINTS
 Base URL : https://evento13.herokuapp.com
