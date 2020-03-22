@@ -12,7 +12,10 @@ from functools import wraps
 from jose import jwt
 from urllib.request import urlopen
 
-from forms import PartyForm, PersonForm
+
+from flask_migrate import Migrate
+from flask_script import Manager
+
 
 # *******************************************************               Initialazation                  *********************************************************
 
@@ -20,17 +23,17 @@ def create_app(test_config=None):
   # create and configure the app
   app = Flask(__name__, static_url_path='/static')
   CORS(app)
- 
+  app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
+  app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
+  app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
+  
   return app
 
 app = create_app()
 
-app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
 db = SQLAlchemy(app)
-
-db.create_all()
+migrate = Migrate(app, db)
+manager = Manager(app)
 
 
    
