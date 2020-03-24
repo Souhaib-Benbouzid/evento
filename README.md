@@ -192,8 +192,18 @@ response example
 
 ##### POST /parties/add
 
-
 add a party, return a success status and description includes the name of the party
+takes a JSON object as body
+
+request example:
+
+{
+    "name": "Jazz time",
+    "description": "chill night in NY",
+    "date": "2020-01-01 12:12:12",
+    "state": "New York",
+    "city": "New York"
+}
 
 response example
 

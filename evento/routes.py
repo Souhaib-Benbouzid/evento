@@ -55,22 +55,22 @@ def party(payload):
 @requires_auth('create:party')
 def add_party(payload):
     try:
-        party = Party.query.filter_by(
-            name=bleach.clean(request.get_json()['name'])).first()
+        party = Party.query.filter_by(name=bleach.clean(request.get_json()['name'])).first()
         if party:
             abort(409)
-        # sanitize inputs and store
+        #sanitize inputs and store
         party = Party(name=bleach.clean(request.get_json()['name']), description=bleach.clean(
             request.get_json()['description']), date=request.get_json()['date'], state=request.get_json()['state'], city=request.get_json()['city'])
         party.insert()
         return jsonify({
             'success': True,
-            'description': f'Party {party.name} is ready to Rock 🤘 !!! '
+            'description': f'Party {party.name} is ready to Rock !!!'
         }), 200
-    except:
+        
+    except Exception as e:
+        print(e)
         db.session.rollback()
-        abort(400)
-
+        abort(404)
 
 @app.route('/parties/update', methods=['PATCH'])
 @requires_auth('update:party')
@@ -83,29 +83,30 @@ def update_party(payload):
                 party.name = bleach.clean(request.get_json().get('name_change'))
 
             if request.get_json().get('description'):
-                party.description = bleach.clean(
-                    request.get_json().get('description'))
+                party.description = bleach.clean(request.get_json().get('description'))
             if request.get_json().get('date'):
-                party.date = datetime.strptime(
-                    request.get_json().get('date'), '%Y-%m-%d %H:%M:%S')
-            party.update()
-
-            return jsonify({
-                'description': f'My party parameters has been updated successfully!. Bip Bop',
-                'success': True,
-            }), 200
+                print('eror')
+                party.date = datetime.strptime(request.get_json().get('date'), '%Y-%m-%d %H:%M:%S')
         else:
             abort(404)
+
+        party.update()
+        
+        return jsonify({
+            'description': f'My party parameters has been updated successfully!. Bip Bop',
+            'success': True,
+        }), 200
+        
     except:
         db.session.rollback()
-        abort(400)
+        abort(404)
 
 
 @app.route('/parties/delete', methods=['DELETE'])
 @requires_auth('delete:party')
 def delete_party(payload):
     try:
-        party = Party.query.filter_by(name=request.get_json().get('name')).first()
+        party = Party.query.filter_by(name=request.get_json()['name']).first()
         if party:
             party.delete()
             return jsonify({
@@ -114,7 +115,8 @@ def delete_party(payload):
             }), 200
         else:
             abort(404)
-    except:
+    except Exception as e:
+        print(e)
         db.session.rollback()
         abort(500)
 
@@ -181,7 +183,7 @@ def add_invities(payload):
 @requires_auth('update:invitees')
 def update_invities(payload):
     try:
-        invitees = Person.query.filter_by(name=request.get_json()['name']).first()
+        invitees = Person.query.filter_by(name=request.get_json().get('name')).first()
         # data insert
         if invitees:
             if request.get_json().get('name_change'):
@@ -246,7 +248,9 @@ def add_invitees_to_party(payload):
             'description': f'Invitee {invitees.name} is added to the {party.name} !!! '
         }), 200
 
-    except:
+    except Exception as e:
+        print(e)
+
         db.session.rollback()
         abort(400)
 
@@ -324,16 +328,24 @@ def server_error(error):
 def unauthorized(error):
     return jsonify({
         'success': False,
-        'description': 'Unauthorized, Permission not found',
+        'description': 'Forbidden, Permission not found',
         'status': 403
     }), 403
+
+@app.errorhandler(401)
+def unauthorized(error):
+    return jsonify({
+        'success': False,
+        'description': 'Unauthorized, Permission not found',
+        'status': 401
+    }), 401
 
 
 @app.errorhandler(AuthError)
 def unauthorized(error):
     return jsonify({
         'success': False,
-        'description': 'Unauthorized, Permission not found',
+        'description': 'Forbidden, Permission not found',
         'status': 403
     }), 403
 
